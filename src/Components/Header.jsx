@@ -44,7 +44,6 @@ function Header() {
                     <li className='flex items-center h-20'><a className='header-b' href="/">Home</a></li>
                     <li className='flex items-center h-20'><a className='header-b' href="/packages">Packages</a></li>
                     <li className='flex items-center h-20'><a className='header-b' href="/about">About Us</a></li>
-                    <li className='flex items-center h-20'><a className='header-b' href="/destinations">Destinations</a></li>
                     <li className='flex items-center h-20'><a className='header-b' href="/contact">Contact Us</a></li>
                 </ul>
             </nav>

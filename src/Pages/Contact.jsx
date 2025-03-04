@@ -6,7 +6,7 @@ function Contact() {
   return (
     <>
     <Header/>
-    <div className='px-40 p-10 h-[100vh]'>
+    <div className='p-10 sm:px-40 sm:p-10 h-[100vh]'>
       <h1 className='font-bold text-4xl'>Contact Us</h1>
       <br />
       <p><b>Email:</b> inquiry.tripverse@gmail.com</p>

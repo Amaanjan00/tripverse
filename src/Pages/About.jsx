@@ -7,7 +7,7 @@ function About() {
   return (
     <div>
       <Header/>
-      <div className='p-40'>
+      <div className='sm:p-40 p-10'>
         <h1 className='text-4xl font-bold'>About Us</h1>
         <br />
         <h2 className='font-medium'>Tripverse Travel & Tourism L.L.C</h2>
