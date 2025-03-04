@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.header-a{
+  @apply py-2 px-4 text-[15px] hover:bg-amber-100 rounded-2xl w-full
+}
+
+.header-b{
+  @apply text-[15px] hover:bg-amber-100 rounded-2xl
+}
