@@ -9,9 +9,9 @@ function OptionDubai() {
         {
             offer: "Basic",
             description: [
-                {item: "abcdads"},
-                {item: "abcdads"},
-                {item: "abcdads"}
+                {item: "3 Star Hotel"},
+                {item: "Dessert Safari"},
+                {item: "Dubai Tour"}
             ],
             price: "AED 1999/-"
         },
@@ -25,7 +25,25 @@ function OptionDubai() {
             price: "AED 1999/-"
         },
         {
-            offer: "ABCD",
+            offer: "Advanced",
+            description: [
+                {item: "abcdads"},
+                {item: "abcdads"},
+                {item: "abcdads"}
+            ],
+            price: "AED 1999/-"
+        },
+        {
+            offer: "Advanced",
+            description: [
+                {item: "abcdads"},
+                {item: "abcdads"},
+                {item: "abcdads"}
+            ],
+            price: "AED 1999/-"
+        },
+        {
+            offer: "Advanced",
             description: [
                 {item: "abcdads"},
                 {item: "abcdads"},
@@ -38,26 +56,24 @@ function OptionDubai() {
 
   return (
     <>
-    <div className='bg-amber-200 flex p-5 m-5 sm:flex sm:justify-evenly sm:m-20 sm:h-fit rounded-4xl overflow-x-scroll shadow-[0_8px_30px_rgb(0,0,0,0.12)] gap-5'>
+    <div className='flex gap-6 flex-nowrap bg-amber-400/30 px-10 py-5 overflow-x-scroll m-4 sm:mx-20 rounded-4xl'>
 
         {options.map((option, index) => (
-            <div className='bg-white rounded-2xl p-5 min-w-full sm:min-w-10 sm:min-h-fit sm:flex sm:flex-col shadow-[0_8px_30px_rgb(0,0,0,0.12)]' key={index}>
-                <img className='rounded-2xl sm:w-100' src={dubai} alt="" />
-                <div className='flex flex-col justify-items-center text-center gap-3 items-center'>
-                    <h2 className='text-4xl font-bold'>{option.offer}</h2>
-                    <ol>
-                        {option.description.map((items, index) => (
-                            <li key={index}>{items.item}</li>
-                        )
-                        )}
-                    </ol>
-                    <h2 className='text-2xl font-bold'>{option.price}</h2>
-                    <ButtonS button="Book Now"/>
-                </div>
+            <div className='inline-flex flex-col gap-5 rounded-3xl min-w-[70vw] sm:min-w-[25vw] py-4 px-4 bg-white text-center' key={index}>
+                <img className='w-[100%] h-50 rounded-2xl object-cover' src={dubai} alt="" />
+                <h1>{option.offer}</h1>
+                <ol>
+                    {option.description.map((desc, index) => (
+                        <li key={index}>{desc.item}</li>
+                    ))}
+                </ol>
+                <p>{option.price}</p>
+                <ButtonS button="View Details"/>
             </div>
         ))}
 
     </div>
+
     <div className='h-10 flex items-center gap-10 justify-end pe-10 sm:hidden'>
         <h1 className='text-2xl font-bold'>Scroll</h1>
         <img className='object-cover h-full' src={arrow} alt="" />  

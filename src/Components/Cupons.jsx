@@ -29,26 +29,28 @@ function Cupons() {
             description: "Get flat 20% on Umrah Packages",
             code: "UMRAH00"
         },
+        {
+            title: "Flat 20% off",
+            description: "Get flat 20% on Umrah Packages",
+            code: "UMRAH00"
+        }
     ]
 
   return (
     <>
-    <div className='sm:m-10 sm:me-20 sm:ms-20 m-10 overflow-x-scroll'>
+    <div className='flex gap-10 flex-nowrap overflow-x-scroll sm:mx-20 h-auto mx-10 my-4 p-5'>
 
-        <div className='flex flex-row gap-4 min-w-[100vw] overflow-y-auto bg-amber-200 p-5 rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]'>
-        
-            {cupons.map((cupon, index) => (
-                <div className='flex relative flex-col min-w-[250px] gap-3 rounded-2xl overflow-clip shadow-[0_8px_30px_rgb(0,0,0,0.12)]' key={index}>
-                    <div className='text-white bg-amber-500 font-bold p-4 flex flex-col gap-2'>
-                        <img className='rounded-2xl' src={dubai} alt="" />
-                        <h1>{cupon.title}</h1>
-                        <h2>{cupon.code}</h2>
-                        <p className='text-[12px]'>{cupon.description}</p>
+        {cupons.map((cupon, index) => (
+            <div className='inline-flex flex-col min-w-60 min-h-70 h-auto rounded-4xl bg-amber-400/10 relative' key={index}>
+                <div className='bg-blue-300/65 z-999 w-[100%] h-[100%] absolute rounded-4xl'></div>
+                <img className='w-[100%] h-[100%] absolute object-cover rounded-4xl' src={dubai} alt="" />
+                <div className='p-5 z-9999 font-bold text-2xl h-[100%] justify-evenly gap-5 flex text-white felx flex-col'>
+                    <h2 className='text-5xl'>{cupon.title}</h2>
+                    <p>{cupon.description}</p>
                 </div>
             </div>
-            ))}
+        ))}
 
-        </div>
     </div>
     </>
   )
