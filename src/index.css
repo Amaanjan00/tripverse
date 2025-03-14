@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
+
+*{
+  font-family: 'Nunito';
+}
 
 .header-a{
   @apply py-2 px-4 text-[15px] hover:bg-amber-100 rounded-2xl w-full

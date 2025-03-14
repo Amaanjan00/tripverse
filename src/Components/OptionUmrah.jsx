@@ -59,7 +59,7 @@ function OptionUmrah() {
     <div className='flex gap-6 flex-nowrap bg-amber-400/30 px-10 py-5 overflow-x-scroll m-4 sm:mx-20 rounded-4xl'>
     
             {options.map((option, index) => (
-                <div className='inline-flex flex-col gap-5 rounded-3xl min-w-[70vw] sm:min-w-[25vw] py-4 px-4 bg-white text-center' key={index}>
+                <div className='inline-flex flex-col gap-5 rounded-3xl min-w-[70vw] sm:min-w-[20vw] py-4 px-4 bg-white text-center' key={index}>
                     <img className='w-[100%] h-50 rounded-2xl object-cover' src={dubai} alt="" />
                     <h1>{option.offer}</h1>
                     <ol>

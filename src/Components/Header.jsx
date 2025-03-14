@@ -14,7 +14,7 @@ function Header() {
             <img className='aspect-video w-35 object-contain' src={logo} alt="" />
 
             <nav className='hidden sm:flex'>
-                <ul className='flex '>
+                <ul className='flex font-bold text-amber-700'>
                     <li><a className='header-a' href="/">Home</a></li>
                     <li><a className='header-a' href="/packages">Packages</a></li>
                     <li><a className='header-a' href="/about">About Us</a></li>
