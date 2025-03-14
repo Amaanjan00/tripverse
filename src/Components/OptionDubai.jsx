@@ -42,17 +42,6 @@ function OptionDubai() {
             image: "https://res.cloudinary.com/dubsv9e9x/image/upload/v1741865719/WhatsApp_Image_2025-03-13_at_16.59.28_8162ea7a_m9zxw1.jpg"
         },
         {
-            offer: "Dubai Platinum Package",
-            description: [
-                {item: "Ultra-Luxury Stay"},
-                {item: "Exclusive Desert Safari & Yacht Cruise"},
-                {item: "Helicopter Tour & Iconic Attractions"},
-                {item: "Burj Al Arab Experience & More!"}
-            ],
-            price: "AED 1999/-",
-            image: "https://res.cloudinary.com/dubsv9e9x/image/upload/v1741865719/WhatsApp_Image_2025-03-13_at_16.59.28_8162ea7a_m9zxw1.jpg"
-        },
-        {
             offer: "Dubai Honeymoon Package",
             description: [
                 {item: "Romantic Luxury Stay"},
@@ -60,8 +49,8 @@ function OptionDubai() {
                 {item: "Couple Spa & Iconic Attractions"},
                 {item: "Burj Khalifa & Candlelight Dinner"}
             ],
-            price: "AED 1999/-",
-            image: "https://res.cloudinary.com/dubsv9e9x/image/upload/v1741865719/WhatsApp_Image_2025-03-13_at_16.59.28_8162ea7a_m9zxw1.jpg"
+            price: "Rs. 37000/Night for couple (2 person)-",
+            image: "https://res.cloudinary.com/dubsv9e9x/image/upload/v1741947781/couple_uxfwaq.jpg"
         },
         
     ]
@@ -69,10 +58,14 @@ function OptionDubai() {
     return (
         <>
 
-    <div className='flex gap-6 flex-nowrap bg-amber-400/30 px-10 py-5 overflow-x-scroll m-4 sm:mx-20 rounded-4xl'>
+    <div className='flex gap-6 flex-nowrap bg-amber-400/30 px-10 py-5 overflow-x-scroll m-4 sm:mx-20 rounded-4xl [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-white
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-700'>
 
         {options.map((option, index) => (
-            <div className='inline-flex justify-between flex-col gap-5 rounded-3xl min-w-[70vw] sm:min-w-[20vw] py-4 px-4 bg-white text-center' key={index}>
+            <div className='inline-flex justify-between flex-col gap-5 rounded-3xl min-w-[70vw] sm:min-w-[25vw] py-4 px-4 bg-white text-center' key={index}>
                 <div className='flex flex-col gap-5'>
                     <img className='w-[100%] h-50 rounded-2xl object-cover' src={option.image} alt="" />
                     <h1 className='font-bold text-2xl'>{option.offer}</h1>
