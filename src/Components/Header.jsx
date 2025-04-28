@@ -32,7 +32,7 @@ function Header() {
 
         {
           m &&
-          <div className='flex flex-col fixed h-[100vh] z-1 top-0 w-full bg-white'>
+          <div className='flex flex-col fixed h-[100vh] z-9999999 top-0 w-full bg-white'>
 
           <div className='flex items-center justify-between px-10'>
             <img className='aspect-video w-35 object-contain h-30' src={logo} alt="" />
