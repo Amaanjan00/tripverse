@@ -65,7 +65,7 @@ function Footer() {
         <div className="flex items-center lg:justify-between lg:flex-row flex-col gap-5 mt-[1px] py-5 lg:px-20 bg-gray-800 text-gray-400 text-[14px]">
             <div className="flex lg:flex-row flex-col items-center gap-1">
                 <p>Got a question? Contact: </p>
-                <a className="text-[#e09900]" href="">zuroorytt@gmail.com</a>
+                <a className="text-[#e09900]" href="">inquiry.tripverse@gmail.com</a>
             </div>
 
             <p>All rights reserved &copy; 2025 Tripverse travel and tourism L.L.C</p>

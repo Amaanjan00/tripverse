@@ -5,8 +5,9 @@ function DubaiPackages() {
     <>
       <div className='px-0 py-5 mt-10 flex flex-col gap-7 md:px-20'>
 
-        <div className='px-10'>
-            <h1 className='uppercase text-3xl font-bold text-yellow-500'>Ziyarat locations in Makkah</h1>
+        <div className='px-10 flex flex-col w-fit gap-2'>
+            <h1 className='uppercase text-4xl font-extrabold text-black'>Dubai Packages</h1>
+            <div className='h-1 w-[70%] bg-amber-500 rounded-4xl'></div>
         </div>
 
         <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
