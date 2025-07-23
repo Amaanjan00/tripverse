@@ -1,3 +1,4 @@
+import Button from '../Button'
 import video from './assets/dubaivid.mp4'
 
 function Video() {
@@ -9,8 +10,8 @@ function Video() {
         <div className='absolute text-white bottom-0 inset-x-0 p-10 lg:inset-x-20 lg:bottom-20 text-center items-center flex flex-col gap-5'>
             <h1 className='text-4xl uppercase md:normal-case lg:text-5xl font-extrabold'>Travel Far, Find Yourself</h1>
             <p className='text-[18px] uppercase md:normal-case lg:text-2xl'>Discover your wanderlust and live your dreams with us</p>
-            <a href='https://www.google.com' className='bg-[#e09900] rounded-2xl w-fit h-fit py-2 px-4 text-[16px] font-bold cursor-pointer'>Inquire Now</a>
-            <a href='https://www.google.com/' className='bg-transparent absolute inset-0 cursor-pointer'></a>
+            <Button/>
+            <a href='https://wa.me/message/SMEYWM2EEXHVM1' className='bg-transparent absolute inset-0 cursor-pointer'></a>
         </div>
       </div>
     </>

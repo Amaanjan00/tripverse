@@ -26,14 +26,14 @@ function Footer() {
                 <div className="gap-3 flex lg:items-start items-center flex-col">
                     <h1 className='text-[#e09900]'>OUR SERVICES</h1>
                     <ul className='items-center lg:items-start flex flex-col gap-1 text-[14px]'>
-                        <li className='hover:text-white'><a href="">Umrah Packages</a></li>
-                        <li className='hover:text-white'><a href="">Dubai Packages</a></li>
-                        <li className='hover:text-white'><a href="">Flight Booking</a></li>
-                        <li className='hover:text-white'><a href="">Visa Assistance</a></li>
-                        <li className='hover:text-white'><a href="">Hotel Stay</a></li>
-                        <li className='hover:text-white'><a href="">Transport</a></li>
-                        <li className='hover:text-white'><a href="">Group Booking</a></li>
-                        <li className='hover:text-white'><a href="">24/7 Support</a></li>
+                        <li onClick={handleClick} className='hover:text-white'><Link to="/umrahpackage">Umrah Packages</Link></li>
+                        <li onClick={handleClick} className='hover:text-white'><Link to="/dubaipackage">Dubai Packages</Link></li>
+                        <li className='hover:text-white'><Link to="">Flight Booking</Link></li>
+                        <li className='hover:text-white'><Link to="">Visa Assistance</Link></li>
+                        <li className='hover:text-white'><Link to="">Hotel Stay</Link></li>
+                        <li className='hover:text-white'><Link to="">Transport</Link></li>
+                        <li className='hover:text-white'><Link to="">Group Booking</Link></li>
+                        <li className='hover:text-white'><Link to="">24/7 Support</Link></li>
                     </ul>
                 </div>
 
@@ -41,9 +41,9 @@ function Footer() {
                     <h1 className='text-[#e09900]'>HELP</h1>
                     <ul className='items-center lg:items-start flex flex-col gap-1 text-[14px]'>
                         <li className='hover:text-white'><a href="tel:+919007167409">Customer Care</a></li>
-                        <li className='hover:text-white' onClick={handleClick}><Link to="/refund-policy">Refund Policy</Link></li>
-                        <li className='hover:text-white' onClick={handleClick}><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
-                        <li className='hover:text-white' onClick={handleClick}><Link to="/privacy-policy">Privacy Poilicy</Link></li>
+                        <li className='hover:text-white' onClick={handleClick}><Link to="/termsandconditions">Refund Policy</Link></li>
+                        <li className='hover:text-white' onClick={handleClick}><Link to="/termsandconditions">Terms & Conditions</Link></li>
+                        <li className='hover:text-white' onClick={handleClick}><Link to="/privacypolicy">Privacy Poilicy</Link></li>
                     </ul>
                 </div>
                 

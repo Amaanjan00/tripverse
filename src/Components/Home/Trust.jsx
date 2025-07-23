@@ -2,9 +2,9 @@ import React from 'react'
 
 function Trust() {
   return (
-    <div>
-      Trust
-    </div>
+    <>
+      <div></div>
+    </>
   )
 }
 

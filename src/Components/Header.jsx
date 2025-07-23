@@ -74,7 +74,7 @@ function Header() {
                                     <li onClick={handleClick}><Link to='/about'>About Us</Link></li>
                                     <li onClick={handleClick}><Link to="/privacypolicy">Privacy Poilicy</Link></li>
                                     <li onClick={handleClick}><Link to="/termsandconditions">Terms and Conditions</Link></li>
-                                    <li><a href="put whatsapp link here">Text on Whatsapp</a></li>
+                                    <li><a href="https://wa.me/message/SMEYWM2EEXHVM1">Text on Whatsapp</a></li>
                                 </ul>
                             </nav>
                         </div>

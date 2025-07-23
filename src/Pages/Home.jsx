@@ -3,11 +3,11 @@ import Header from '../Components/Header'
 import Video from '../Components/Home/Video'
 import Footer from '../Components/Footer'
 import LandscapeBanner from '../Components/Home/LandscapeBanner'
-import DubaiPackages from '../Components/Home/DubaiPackages'
-import UmrahPackages from '../Components/Home/UmrahPackages'
+import ScrollableDubaiPackages from '../Components/ScrollableDubaiPackages'
 import Testimonials from '../Components/Home/Testimonials'
 import Trust from '../Components/Home/Trust'
 import HowToBook from '../Components/Home/HowToBook'
+import ScrollableUmrahPackages from '../Components/ScrollableUmrahPackages'
 
 function Home() {
   return (
@@ -15,8 +15,8 @@ function Home() {
       <Header/>
       <Video/>
       <LandscapeBanner/>
-      <DubaiPackages/>
-      <UmrahPackages/>
+      <ScrollableDubaiPackages/>
+      <ScrollableUmrahPackages/>
       <HowToBook/>
       <Trust/>
       <Testimonials/>
