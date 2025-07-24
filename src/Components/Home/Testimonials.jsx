@@ -103,7 +103,6 @@ function Testimonials() {
                                         </div>
 
                                         <div className="flex items-center mt-8">
-                                            <img className="flex-shrink-0 object-cover rounded-full w-11 h-11" src={t.image} alt="" />
                                             <div className="ml-4">
                                                 <p className="text-base font-bold text-gray-900 font-pj">{t.name}</p>
                                                 <p className="mt-0.5 text-sm font-pj text-gray-600">{t.jobtitle}</p>
