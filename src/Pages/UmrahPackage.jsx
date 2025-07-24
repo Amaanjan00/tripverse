@@ -26,6 +26,58 @@ import uhud from '../assets/uhud.jpg'
 import Button from '../Components/Button'
 
 function UmrahPackage() {
+
+    const madinahziyarat = [
+        {
+            heading: "Masjid Nabawi",
+            description: "Prophet Muhammad’s mosque and resting place in Madinah.",
+            image: masjidnabawi
+        },
+        {
+            heading: "Baqi Cemetery",
+            description: "Historic cemetery housing graves of Prophet’s family, companions.",
+            image: baqi
+        },
+        {
+            heading: "Masjid Quba",
+            description: "First mosque built in Islam by Prophet Muhammad.",
+            image: masjidquba
+        },
+        {
+            heading: "Uhud Mountain",
+            description: "Site of major battle between Muslims and Quraysh.",
+            image: uhud
+        },
+    ]
+
+    const makkahziyarat = [
+        {
+            heading: "Cave Hira",
+            description: "Where Prophet Muhammad received the first revelation, Quran.",
+            image: cavehira
+        },
+        {
+            heading: "Cave Thawr",
+            description: "Shelter of Prophet Muhammad and Abu Bakr during migration",
+            image: cavethawr
+        },
+        {
+            heading: "Masjid Aisha",
+            description: "Miqat mosque for pilgrims to enter Ihram from Makkah",
+            image: masjidaisha
+        },
+        {
+            heading: "Mina",
+            description: "Tented city where Hajj pilgrims stay and perform stoning ritual.",
+            image: mina
+        },
+        {
+            heading: "Arafat",
+            description: "Key Hajj site where pilgrims gather for supplication and prayer.",
+            image: arafat
+        },
+    ]
+
   return (
     <div>
       <Header/>
@@ -39,7 +91,6 @@ function UmrahPackage() {
           <h1 className='text-2xl uppercase md:normal-case lg:text-5xl font-extrabold'>Embark on a blessed Umrah journey with comfort, convenience, and spiritual fulfillment.</h1>
           <p className='text-[14px] px-0 lg:px-0 uppercase md:normal-case lg:text-2xl'>Seamless Umrah experience with premium services and guided support.</p>
           <Button/>
-          <a href='https://wa.me/message/SMEYWM2EEXHVM1' className='bg-transparent absolute inset-0 cursor-pointer'></a>
         </div>
       </div>
 
@@ -148,7 +199,7 @@ function UmrahPackage() {
         <div className='flex flex-col lg:flex-row mt-5 pt-10 bg-gray-800 md:p-14 justify-center items-center'>
 
         <div className='md:hidden px-10'>
-            <h1 className='text-5xl text-center text-yellow-500 font-bold uppercase'>Best in class Umrah package</h1>
+            <h1 className='text-3xl text-left md:text-center text-yellow-500 font-bold uppercase'>Best in class Umrah package</h1>
         </div>
 
         <div className='grid grid-cols-2 p-8 gap-4'>
@@ -162,10 +213,10 @@ function UmrahPackage() {
         <div className='p-6 px-10 flex flex-col gap-4 text-yellow-500'>
             <div className='flex flex-col gap-4'>
                 <h1 className='hidden md:block text-5xl font-bold uppercase'>Best in class Umrah package</h1>
-                <h2 className='text-3xl font-bold md:font-medium'>Experience a Blessed Journey to Makkah & Madinah</h2>
+                <h2 className='text-2xl font-bold md:font-medium'>Experience a Blessed Journey to Makkah & Madinah</h2>
             </div>
             <div className='text-2xl'>
-                <ul className='flex flex-col gap-2 list-disc pt-4 p-8'>
+                <ul className='flex flex-col gap-5 list-disc pt-4 p-8'>
                     <li><p><b>Premium Accommodation</b> – Stay in top-rated hotels near Masjid al-Haram & Masjid an-Nabawi.</p></li>
                     <li><p><b>Visa Assistance</b> – Hassle-free Umrah visa processing.</p></li>
                     <li><p><b>Comfortable Transport</b> – Private airport transfers & intercity travel between Makkah & Madinah.</p></li>
@@ -192,37 +243,15 @@ function UmrahPackage() {
 
         <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
 
-            <div className='relative flex shrink-0 ml-5'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={masjidnabawi} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Masjid Nabawi</h1>
-                    <p className='text-[14px] text-white'>Prophet Muhammad’s mosque and resting place in Madinah.</p>
+            {madinahziyarat.map((madinah, index) => (
+                <div key={index} className='relative flex shrink-0 ml-5'>
+                    <img className='h-90 w-70 object-cover rounded-3xl' src={madinah.image} alt="" />
+                    <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
+                        <h1 className='text-2xl font-extrabold text-white'>{madinah.heading}</h1>
+                        <p className='text-[14px] text-white'>{madinah.description}</p>
+                    </div>
                 </div>
-            </div>
-
-            <div className='relative flex shrink-0'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={baqi} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Baqi Cemetery</h1>
-                    <p className='text-[14px] text-white'>Historic cemetery housing graves of Prophet’s family, companions.</p>
-                </div>
-            </div>
-
-            <div className='relative flex shrink-0'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={masjidquba} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Masjid Quba</h1>
-                    <p className='text-[14px] text-white'>First mosque built in Islam by Prophet Muhammad.</p>
-                </div>
-            </div>
-
-            <div className='relative flex shrink-0 mr-10'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={uhud} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Uhud Mountain</h1>
-                    <p className='text-[14px] text-white'>Site of major battle between Muslims and Quraysh.</p>
-                </div>
-            </div>
+            ))}
 
         </div>
 
@@ -240,45 +269,15 @@ function UmrahPackage() {
 
         <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
 
-            <div className='relative flex shrink-0 ml-5'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={cavehira} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Cave Hira</h1>
-                    <p className='text-[14px] text-white'>Where Prophet Muhammad received the first revelation, Quran.</p>
+            {makkahziyarat.map((makkah, index) => (
+                <div key={index} className='relative flex shrink-0 ml-5'>
+                    <img className='h-90 w-70 object-cover rounded-3xl' src={makkah.image} alt="" />
+                    <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
+                        <h1 className='text-2xl font-extrabold text-white'>{makkah.heading}</h1>
+                        <p className='text-[14px] text-white'>{makkah.description}</p>
+                    </div>
                 </div>
-            </div>
-
-            <div className='relative flex shrink-0'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={cavethawr} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Cave Thawr</h1>
-                    <p className='text-[14px] text-white'>Shelter of Prophet Muhammad and Abu Bakr during migration</p>
-                </div>
-            </div>
-
-            <div className='relative flex shrink-0'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={masjidaisha} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Masjid Aisha</h1>
-                    <p className='text-[14px] text-white'>Miqat mosque for pilgrims to enter Ihram from Makkah</p>
-                </div>
-            </div>
-
-            <div className='relative flex shrink-0'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={mina} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Mina</h1>
-                    <p className='text-[14px] text-white'>Tented city where Hajj pilgrims stay and perform stoning ritual.</p>
-                </div>
-            </div>
-
-            <div className='relative flex shrink-0 mr-10'>
-                <img className='h-90 w-70 object-cover rounded-3xl' src={arafat} alt="" />
-                <div className='absolute inset-x-0 bottom-0 p-5 bg-black/50 rounded-b-3xl'>
-                    <h1 className='text-2xl font-extrabold text-white'>Arafat</h1>
-                    <p className='text-[14px] text-white'>Key Hajj site where pilgrims gather for supplication and prayer.</p>
-                </div>
-            </div>
+            ))}
 
         </div>
 

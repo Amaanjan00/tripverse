@@ -5,9 +5,9 @@ import Footer from '../Components/Footer'
 import LandscapeBanner from '../Components/Home/LandscapeBanner'
 import ScrollableDubaiPackages from '../Components/ScrollableDubaiPackages'
 import Testimonials from '../Components/Home/Testimonials'
-import Trust from '../Components/Home/Trust'
 import HowToBook from '../Components/Home/HowToBook'
 import ScrollableUmrahPackages from '../Components/ScrollableUmrahPackages'
+import Chauffeurhome from '../Components/Home/Chaufferhome'
 
 function Home() {
   return (
@@ -17,8 +17,8 @@ function Home() {
       <LandscapeBanner/>
       <ScrollableDubaiPackages/>
       <ScrollableUmrahPackages/>
+      <Chauffeurhome/>
       <HowToBook/>
-      <Trust/>
       <Testimonials/>
       <Footer/>
     </>

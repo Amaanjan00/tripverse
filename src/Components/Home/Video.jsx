@@ -11,7 +11,6 @@ function Video() {
             <h1 className='text-4xl uppercase md:normal-case lg:text-5xl font-extrabold'>Travel Far, Find Yourself</h1>
             <p className='text-[18px] uppercase md:normal-case lg:text-2xl'>Discover your wanderlust and live your dreams with us</p>
             <Button/>
-            <a href='https://wa.me/message/SMEYWM2EEXHVM1' className='bg-transparent absolute inset-0 cursor-pointer'></a>
         </div>
       </div>
     </>

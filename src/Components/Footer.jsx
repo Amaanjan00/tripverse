@@ -30,6 +30,7 @@ function Footer() {
                         <li onClick={handleClick} className='hover:text-white'><Link to="/dubaipackage">Dubai Packages</Link></li>
                         <li className='hover:text-white'><Link to="">Flight Booking</Link></li>
                         <li className='hover:text-white'><Link to="">Visa Assistance</Link></li>
+                        <li className='hover:text-white'><Link to="">Chauffeur service</Link></li>
                         <li className='hover:text-white'><Link to="">Hotel Stay</Link></li>
                         <li className='hover:text-white'><Link to="">Transport</Link></li>
                         <li className='hover:text-white'><Link to="">Group Booking</Link></li>

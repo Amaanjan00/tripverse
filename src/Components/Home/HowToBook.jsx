@@ -8,6 +8,11 @@ function HowToBook() {
   return (
     <div>
       <div className='lg:px-25 lg:py-10 p-5 w-full h-fit'>
+
+        <div className='pb-10 text-3xl font-extrabold text-center'>
+          <h1>How to Book?</h1>
+        </div>
+
         <div className='lg:px-10 bg-amber-600 lg:rounded-tl-[7rem] lg:rounded-br-[7rem] lg:rounded-[0] rounded-4xl'>
 
           <div className='flex md:flex-row justify-evenly items-center flex-col gap-10 px-10 text-center'>
@@ -24,7 +29,7 @@ function HowToBook() {
 
             <div className='p-5 items-center h-80 justify-between uppercase text-white font-extrabold flex flex-col'>
               <img className='w-fit h-fit min-h-50 scale-65' src={choosemethod} alt="" />
-              <h1 className='min-h-15'>Choose the <br /> method of Inquiry</h1>
+              <h1 className='min-h-15'>Choose Email or WhatsApp, then send</h1>
             </div>
 
             <div className='p-5 items-center h-80 justify-between uppercase text-white font-extrabold flex flex-col'>
