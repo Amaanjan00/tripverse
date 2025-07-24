@@ -41,7 +41,7 @@ function Footer() {
                 <div className="gap-3 flex lg:items-start items-center flex-col">
                     <h1 className='text-[#e09900]'>HELP</h1>
                     <ul className='items-center lg:items-start flex flex-col gap-1 text-[14px]'>
-                        <li className='hover:text-white'><a href="tel:+919007167409">Customer Care</a></li>
+                        <li className='hover:text-white'><a href="tel:+971521601190">Customer Care</a></li>
                         <li className='hover:text-white' onClick={handleClick}><Link to="/termsandconditions">Refund Policy</Link></li>
                         <li className='hover:text-white' onClick={handleClick}><Link to="/termsandconditions">Terms & Conditions</Link></li>
                         <li className='hover:text-white' onClick={handleClick}><Link to="/privacypolicy">Privacy Poilicy</Link></li>
