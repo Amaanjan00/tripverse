@@ -9,6 +9,7 @@ import UmrahPackage from './Pages/UmrahPackage.jsx'
 import DubaiPackage from './Pages/DubaiPackage.jsx'
 import Privacypolicy from './Pages/Privacypolicy.jsx'
 import Termsandconditions from './Pages/Termsandconditions.jsx'
+import ChaufferService from './Pages/ChaufferService.jsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <App/>},
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
   {path: '/umrahpackage', element: <UmrahPackage/>},
   {path: '/dubaipackage', element: <DubaiPackage/>},
   {path: '/privacypolicy', element: <Privacypolicy/>},
-  {path: '/termsandconditions', element: <Termsandconditions/>}
+  {path: '/termsandconditions', element: <Termsandconditions/>},
+  {path: '/chaufferservice', element: <ChaufferService/>}
 ])
 
 createRoot(document.getElementById('root')).render(

@@ -9,7 +9,7 @@ function Button() {
 
   return (
     <>
-      <div className='bg-[#e09900] w-fit px-4 py-2 rounded-2xl font-bold text-white cursor-pointer'>
+      <div className='bg-[#e09900] hover:bg-amber-700 transition-all duration-300 w-fit px-4 py-2 rounded-2xl font-bold text-white cursor-pointer'>
         <button onClick={() => SetPop(true)} className='cursor-pointer'>Inquire Now</button>
       </div>
 

@@ -6,31 +6,37 @@ function UmrahPackages() {
 
     const packages = [
         {
+            img: "https://placehold.co/400x320/png",
             packagename: "Umrah Package",
             shortdescription: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, officia eius. Cumque ipsa totam aliquam voluptatem? Consequuntur iure minima iste sit error hic, modi, ad explicabo ea est molestiae incidunt?",
             price: "1000"
         },
         {
+            img: "https://placehold.co/400x320/png",
             packagename: "Package Name",
             shortdescription: "Package Description",
             price: "1000"
         },
         {
+            img: "https://placehold.co/400x320/png",
             packagename: "Package Name",
             shortdescription: "Package Description",
             price: "1000"
         },
         {
+            img: "https://placehold.co/400x320/png",
             packagename: "Package Name",
             shortdescription: "Package Description",
             price: "1000"
         },
         {
+            img: "https://placehold.co/400x320/png",
             packagename: "Package Name",
             shortdescription: "Package Description",
             price: "1000"
         },
         {
+            img: "https://placehold.co/400x320/png",
             packagename: "Package Name",
             shortdescription: "Package Description loremsafmadkfadskfaskjfaskfaskj",
             price: "1000"
@@ -51,7 +57,7 @@ function UmrahPackages() {
             {packages.map((p, index)=>(
                 <div key={index} className='flex flex-col shrink-0 shadow-2xl w-[20rem] overflow-clip'>
 
-                    <img className='h-[20rem] w-full rounded-t-2xl hover:scale-110 transition-all duration-1000' src="https://placehold.co/400x320/png" alt="" />
+                    <img className='h-[20rem] w-full rounded-t-2xl hover:scale-110 transition-all duration-1000' src={p.img} loading='lazy' alt="" />
                     <div className='h-fit'>
                         <h1 className='pt-5 px-5 pb-2 font-bold'>{p.packagename}</h1>
                         <div className='px-5 bg-white flex flex-col text-wrap truncate h-25 max-w-fit gap-4'>

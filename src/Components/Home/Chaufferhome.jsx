@@ -1,7 +1,10 @@
+import { Link } from 'react-router'
 import React from 'react'
 import Button from '../Button'
+import LearnMoreButton from '../LearnMoreButton'
 
 function Chauffeurhome() {
+
   return (
     <>
       <div className='px-5 md:px-30 flex flex-col gap-8'>
@@ -26,6 +29,8 @@ function Chauffeurhome() {
           </div>
 
         </div>
+
+        <Link to="/chaufferservice"><LearnMoreButton/></Link>
 
       </div>
     </>

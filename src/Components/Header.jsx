@@ -20,6 +20,7 @@ function Header() {
                             <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/'>Home</Link></li>
                             <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/umrahpackage'>Umrah Packages</Link></li>
                             <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/dubaipackage'>Dubai Packages</Link></li>
+                            <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/chaufferservice'>Chauffer Service</Link></li>
                             <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/about'>About Us</Link></li>
                         </ul>
                     </nav>
