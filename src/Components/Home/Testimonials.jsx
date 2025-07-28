@@ -62,7 +62,7 @@ function Testimonials() {
                             <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"></div>
                         </div>
 
-                        <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                        <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3 bg-amber-400 rounded-4xl p-7">
 
                             {testimonials.map((t, index) => (
                                 <div key={index} className="flex flex-col overflow-hidden shadow-xl rounded-4xl">
