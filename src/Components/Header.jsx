@@ -17,11 +17,11 @@ function Header() {
                     </div>
                     <nav>
                         <ul className='flex text-gray-500 text-[14px] font-semibold gap-5'>
-                            <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/'>Home</Link></li>
-                            <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/umrahpackage'>Umrah Packages</Link></li>
-                            <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/dubaipackage'>Dubai Packages</Link></li>
-                            <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/chaufferservice'>Chauffer Service</Link></li>
-                            <li className='rounded-2xl hover:bg-[#e09900] hover:text-white py-1 px-2' onClick={handleClick}><Link to='/about'>About Us</Link></li>
+                            <Link onClick={handleClick} to='/'><li className='rounded-2xl hover:bg-[#e09900] hover:text-white transition-all duration-100 py-1 px-2'>Home</li></Link>
+                            <Link onClick={handleClick} to='/umrahpackage'><li className='rounded-2xl hover:bg-[#e09900] hover:text-white transition-all duration-100 py-1 px-2'>Umrah Packages</li></Link>
+                            <Link onClick={handleClick} to='/dubaipackage'><li className='rounded-2xl hover:bg-[#e09900] hover:text-white transition-all duration-100 py-1 px-2'>Dubai Packages</li></Link>
+                            <Link onClick={handleClick} to='/chaufferservice'><li className='rounded-2xl hover:bg-[#e09900] hover:text-white transition-all duration-100 py-1 px-2'>Chauffer Service</li></Link>
+                            <Link onClick={handleClick} to='/about'><li className='rounded-2xl hover:bg-[#e09900] hover:text-white transition-all duration-100 py-1 px-2'>About Us</li></Link>
                         </ul>
                     </nav>
                     <div className=''>
