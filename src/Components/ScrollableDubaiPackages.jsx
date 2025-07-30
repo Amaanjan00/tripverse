@@ -57,7 +57,7 @@ function DubaiPackages() {
             {packages.map((p, index)=>(
                 <div key={index} className='flex text-[14px] flex-col shrink-0 shadow-2xl w-[20rem] overflow-clip'>
 
-                    <img className='h-[20rem] w-full rounded-t-2xl hover:scale-110 transition-all duration-1000' src={p.image} loading='lazy' alt="" />
+                    <img className='h-[15rem] w-full rounded-t-2xl hover:scale-110 transition-all duration-1000' src={p.image} loading='lazy' alt="" />
                     <div className='h-fit'>
                         <h1 className='pt-5 px-5 pb-2 font-bold'>{p.packagename}</h1>
                         <div className='px-5 bg-white flex flex-col truncate text-wrap h-25 max-w-fit gap-4'>
