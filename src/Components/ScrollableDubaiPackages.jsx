@@ -55,7 +55,7 @@ function DubaiPackages() {
         <div className='flex gap-6 overflow-x-auto pb-15 pt-7 px-5 snap-x snap-mandatory scrollbar-hide md:pl-10'>
 
             {packages.map((p, index)=>(
-                <div key={index} className='flex flex-col shrink-0 shadow-2xl w-[20rem] overflow-clip'>
+                <div key={index} className='flex text-[14px] flex-col shrink-0 shadow-2xl w-[20rem] overflow-clip'>
 
                     <img className='h-[20rem] w-full rounded-t-2xl hover:scale-110 transition-all duration-1000' src={p.image} loading='lazy' alt="" />
                     <div className='h-fit'>
@@ -64,7 +64,7 @@ function DubaiPackages() {
                             <p>{p.shortdescription}</p>
                         </div>
                         <div className='px-5 pb-5 pt-3 flex flex-col gap-3'>
-                            <p className='font-bold text-[18px] text-green-500'>AED {p.price}/-</p>
+                            <p className='font-bold text-green-500'>AED {p.price}/-</p>
                             <Button/>
                         </div>
                     </div>

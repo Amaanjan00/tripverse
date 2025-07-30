@@ -241,7 +241,7 @@ function UmrahPackage() {
             <h1 className='uppercase text-3xl font-bold text-yellow-500'>Ziyarat locations in Madinah</h1>
         </div>
 
-        <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
+        <div className='flex gap-2 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
 
             {madinahziyarat.map((madinah, index) => (
                 <div key={index} className='relative flex shrink-0 ml-5'>
@@ -267,7 +267,7 @@ function UmrahPackage() {
             <h1 className='uppercase text-3xl font-bold text-yellow-500'>Ziyarat locations in Makkah</h1>
         </div>
 
-        <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
+        <div className='flex gap-2 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
 
             {makkahziyarat.map((makkah, index) => (
                 <div key={index} className='relative flex shrink-0 ml-5'>

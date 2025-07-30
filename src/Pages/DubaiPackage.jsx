@@ -222,7 +222,7 @@ function DubaiPackage() {
             <h1 className='uppercase text-3xl font-bold text-yellow-500'>Places to visit in dubai</h1>
         </div>
 
-        <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
+        <div className='flex gap-2 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
 
             {placestovisitindubai.map((p, index) => (
               <div key={index} className='relative flex shrink-0 ml-5'>
@@ -248,7 +248,7 @@ function DubaiPackage() {
             <h1 className='uppercase text-3xl font-bold text-yellow-500'>Things to do in dubai</h1>
         </div>
 
-        <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
+        <div className='flex gap-2 overflow-x-auto snap-x snap-mandatory scrollbar-hide mb-5'>
 
             {thingstodoindubai.map((t, index) => (
               <div key={index} className='relative flex shrink-0 ml-5'>
