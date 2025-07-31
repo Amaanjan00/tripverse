@@ -12,34 +12,34 @@ function UmrahPackages() {
         {
             img: umrahpackage1,
             packagename: "Umrah Essence 5 | 5 Days / 4 Nights",
-            shortdescription: "Visa, private transfers, 3 star hotels, three Makkah nights, one Madinah night, flights excluded, August travel, 24/7 support included.",
-            twoprice: "1549",
-            threeprice: "1266",
-            fourprice: "1250"
+            shortdescription: "Visa, private transfers, 3 star hotels, three Makkah nights, one Madinah night, flights included, August travel, 24/7 support included.",
+            twoprice: "2799",
+            threeprice: "2599",
+            fourprice: "2399"
         },
         {
             img: umrahpackage2,
             packagename: "Umrah Balance 7 | 7 Days / 6 Nights",
-            shortdescription: "Visas included, private transfers, 3 star hotels, four Makkah nights, two Madinah nights, flights excluded, August dates, 24/7 assistance.",
-            twoprice: "1789",
-            threeprice: "1433",
-            fourprice: "1375"
+            shortdescription: "Visas included, private transfers, 3 star hotels, four Makkah nights, two Madinah nights, flights included, August dates, 24/7 assistance.",
+            twoprice: "3099",
+            threeprice: "2799",
+            fourprice: "2599"
         },
         {
             img: umrahpackage3,
             packagename: "Umrah Classic 10 | 10 Days / 9 Nights",
-            shortdescription: "Complete package: visas, transfers, 3 star hotels, six Makkah nights, three Madinah nights, flights excluded, August flexibility, 24/7 help.",
-            twoprice: "2069",
-            threeprice: "1633",
-            fourprice: "1500"
+            shortdescription: "Complete package: visas, transfers, 3 star hotels, six Makkah nights, three Madinah nights, flights included, August flexibility, 24/7 help.",
+            twoprice: "3499",
+            threeprice: "3199",
+            fourprice: "2999"
         },
         {
             img: umrahpackage4,
             packagename: "Umrah Devotion 15 | 15 Days / 14 Nights",
-            shortdescription: "Extended stay: visas, transfers, 3 star hotels, nine Makkah nights, five Madinah nights, flights excluded, relaxed pace, 24/7 support.",
-            twoprice: "2595",
-            threeprice: "1966",
-            fourprice: "1775"
+            shortdescription: "Extended stay: visas, transfers, 3 star hotels, nine Makkah nights, five Madinah nights, flights included, relaxed pace, 24/7 support.",
+            twoprice: "3999",
+            threeprice: "3599",
+            fourprice: "3399"
         },
         
     ]
